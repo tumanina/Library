@@ -1,0 +1,12 @@
+# Octopus Deploy
+
+**Octopus Deploy** is an automated deployment and release management tool.
+
+Automated deployment
+Automated build servers like Jenkins, TeamCity, and Team Build are designed to enable the practice of continuous integration. They do this by providing a single place to verify that the code a developer has committed compiles, that unit tests pass, and that it's safe for other developers to merge their changes. Practically speaking, they also settle the age-old "it builds on my machine" debate.
+Deploying software is different to building it:
+●	A build server runs an entire build sequentially on a single agent. There are usually many servers involved in a deployment, and some deployment steps need to happen in parallel.
+●	Builds embrace the "fail fast" principle. If a problem is encountered during a deployment, we often want to manually intervene, or skip the broken step and proceed with the rest of the deployment.
+●	Build server permission & auditing models aren't usually designed for release management.
+The best engineering teams recognize that build and deployment are fundamentally different. There are some similarities - they both involve automation - but the architecture of a robust deployment system is simply different to that of a build server.
+Read more: https://octopus.com/blog/octopus-vs-build-server
